@@ -1,0 +1,28 @@
+{
+  "name": "taller-10",
+  "version": "1.0.0",
+  "description": "Taller 10 con Storm Path",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USADESARROLLOWEB/taller-10-StormPath-JavaQuest.git"
+  },
+  "keywords": [
+    "Storm",
+    "Path",
+    "Node",
+    "npm"
+  ],
+  "author": "Juliana Diaz y Steven Puerto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/USADESARROLLOWEB/taller-10-StormPath-JavaQuest/issues"
+  },
+  "homepage": "https://github.com/USADESARROLLOWEB/taller-10-StormPath-JavaQuest#readme",
+  "dependencies": {
+    "express-stormpath": "^3.2.0"
+  }
+}
