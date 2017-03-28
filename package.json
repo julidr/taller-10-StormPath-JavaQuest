@@ -1,10 +1,10 @@
 {
-  "name": "taller-10",
-  "version": "1.0.0",
+  "name": "stormpath",
+  "version": "0.0.0",
   "description": "Taller 10 con Storm Path",
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,18 @@
     "npm"
   ],
   "author": "Juliana Diaz y Steven Puerto",
-  "license": "ISC",
-  "bugs": {
+    "bugs": {
     "url": "https://github.com/USADESARROLLOWEB/taller-10-StormPath-JavaQuest/issues"
   },
   "homepage": "https://github.com/USADESARROLLOWEB/taller-10-StormPath-JavaQuest#readme",
   "dependencies": {
-    "express-stormpath": "^3.2.0"
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "express-stormpath": "^3.2.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
   }
 }
