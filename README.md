@@ -4,3 +4,6 @@ Implementación de Storm Path utilizando una estrategia local y una estrategia c
 ## JavaQuest
   - [Juliana Diaz](https://github.com/julidr)
   - [Steven Puerto](https://github.com/stevenn2012)
+
+## Requerimientos
+  - StormPath ```sh npm install express-stormpath```
