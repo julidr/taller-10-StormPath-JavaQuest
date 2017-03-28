@@ -6,4 +6,4 @@ Implementación de Storm Path utilizando una estrategia local y una estrategia c
   - [Steven Puerto](https://github.com/stevenn2012)
 
 ## Requerimientos
-  - StormPath ```sh npm install express-stormpath```
+  - StormPath ```npm install express-stormpath```
