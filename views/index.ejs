@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include partials/header %>
+  <div class="page-header">
+    <h1><%= title %> <small>Best application to create an account</small></h1>
+  </div>
+  <div class="jumbotron text-center announce">
+    <% if(user) { %>
+          <h1>Welcome back! <%= user.givenName %></h1>
+          <p>Look your <a href="/profile">profile</a> to see what is happening</p>
+    <% }else{ %>
+           <h1>Hello!</h1>
+           <p>Now that you are here don't forget to <a href="/login">login</a> into your account</p>
+           <p>or in case you don't have an account, come on! and <a href="/register"> create a new account</a>so you can experience how is to create and account</p>
+    <% } %>
+    
+  </div>
+<% include partials/footer %>
