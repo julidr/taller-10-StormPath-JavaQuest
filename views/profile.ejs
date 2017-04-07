@@ -1,5 +1,30 @@
-<% include ./partials/header %>
-
-    <h1>profile</h1>
-
-<% include ./partials/footer %>
+<% include partials/header %>
+    <%if(typeof user !== 'undefined'){ %>
+        <% if(user) { %>
+            <h1>Hi! <%= user.givenName %> Welcome to your profile</h1>
+            <div class="container" id="profile">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <h4>
+                                        <%= user.fullName %></h4>
+                                    <small><cite title="San Francisco, USA">San Francisco, USA <i class="glyphicon glyphicon-map-marker">
+                                    </i></cite></small>
+                                    <p>
+                                        <i class="glyphicon glyphicon-envelope"></i> <%= user.email %>
+                                        <br />
+                                        <i class="glyphicon glyphicon-gift"></i>June 02, 1988</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <% } %>
+    <% } %>
+<% include partials/footer %>
