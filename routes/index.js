@@ -10,7 +10,7 @@ router.get('/', stormpath.getUser, function(req, res, next) {
 });
 
 router.get('/profile', stormpath.authenticationRequired, function(req, res) {
-  res.render('profile');
+  res.render('profile',{ title: 'Stormpath SignUp' });
 });
 
 router.post('/profile', bodyParser.urlencoded({extended: false}), stormpath.authenticationRequired, function(req, res, next) {
@@ -23,7 +23,7 @@ router.post('/profile', bodyParser.urlencoded({extended: false}), stormpath.auth
     if (err) {
       return next(err);
     }
-    res.render('profile');
+    res.render('profile', { title: 'Stormpath SignUp' });
   });
 });
 
