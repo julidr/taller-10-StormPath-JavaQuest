@@ -16,3 +16,6 @@ Si algo lo necesario es:
   - Ejs ```npm install ejs```
   - Morgan ```npm install morgan```
   - Serve Favicon ```npm install serve-favicon```
+
+## Consideraciones
+Si se intenta hacer el inicio de sesión con la red social, es necesario que se posean permisos, dado que la aplicación se esta trabajando aun como en "develop" entonces no cualquier usuario puede usarla.
